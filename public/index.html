@@ -9,36 +9,42 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <title>WazoTek - Software Engineering Services</title>
   <link rel="stylesheet" href="styles.css"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 <body class="bg-gray-800 text-gray-800">
-  <header class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto flex items-center justify-between">
-      <div class="flex items-center">
-        <img src="logo.svg" alt="WazoTek Logo" class="h-16 mr-4">
-        <div>
-          <h1 class="text-4xl font-bold">WazoTek</h1>
-          <p class="text-lg mt-2">Innovative Software Engineering Solutions</p>
-        </div>
+  <header class="text-gray-50 py-8">
+    <div class="relative">
+      <div class="absolute hidden md:block">
+        <img src="logo.svg" alt="WazoTek Logo" class="h-16 ml-8">
+      </div>
+      <div class="text-center">
+        <img src="logo.svg" alt="WazoTek Logo" class="md:hidden h-16 mx-auto mb-2">
+        <h1 class="text-4xl font-bold">WazoTek</h1>
+        <p class="text-lg mt-2">Innovative Software Engineering Solutions</p>
       </div>
     </div>
   </header>
-  <main class="bg-gray-100 mx-auto py-12 px-8 w-full">
-    <section class="mb-12">
+  <main class="bg-gray-100 mx-auto p-8 w-full">
+    <section class="mb-8">
       <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img src="backend.svg" alt="Backend Icon" class="mx-auto mb-4 w-1/6">
           <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
           <p>Robust and scalable server-side solutions tailored to your business needs.</p>
         </div>
         <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img src="frontend.svg" alt="Frontend Icon" class="mx-auto mb-4 w-1/6">
           <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
           <p>Modern, responsive, and user-friendly interfaces for web and mobile applications.</p>
         </div>
         <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img src="cloud.svg" alt="Cloud Icon" class="mx-auto mb-4 w-1/6">
           <h3 class="text-xl font-semibold mb-4">Cloud Infrastructure</h3>
           <p>Reliable and secure cloud solutions to ensure seamless scalability and performance.</p>
         </div>
         <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <img src="data.svg" alt="Data Icon" class="mx-auto mb-4 w-1/6">
           <h3 class="text-xl font-semibold mb-4">Data Science</h3>
           <p>Data-driven insights and machine learning models to empower your business decisions.</p>
         </div>
@@ -47,13 +53,19 @@
     <section class="text-center">
       <h2 class="text-3xl font-bold mb-6">Why Choose Us?</h2>
       <p class="text-lg max-w-2xl mx-auto">
-        At WazoTek, we combine technical expertise with innovative thinking to deliver exceptional software solutions.
-        We are dedicated to helping you achieve your goals with cutting-edge technology and personalized service.
+      At WazoTek, we combine technical expertise with innovative thinking to deliver exceptional software solutions.
+      We are dedicated to helping you achieve your goals with cutting-edge technology and personalized service.
+      </p>
+    </section>
+    <section class="text-center mt-8">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-2">
+      Have questions or want to discuss your project? Reach out to us today at <a href="mailto:info@wazo-tek.com" class="text-blue-500 font-bold hover:underline">info@wazo-tek.com</a>!
       </p>
     </section>
   </main>
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
+  <footer class="text-white py-6">
+    <div class="mx-auto text-center">
       <p>&copy; 2025 WazoTek Limited. All rights reserved.</p>
     </div>
   </footer>
