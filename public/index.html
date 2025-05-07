@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,19 @@
 <body class="bg-gray-800 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
   <header class="text-gray-50 py-8 dark:text-gray-200">
     <div class="relative">
-      <div class="absolute hidden md:block">
-        <img src="logo.svg" alt="WazoTek Logo" class="h-16 ml-8">
+      <div class="absolute hidden md:block top-1.5 left-0 ml-8">
+        <img src="logo.svg" alt="WazoTek Logo" class="h-16">
       </div>
       <div class="text-center">
         <img src="logo.svg" alt="WazoTek Logo" class="md:hidden h-16 mx-auto mb-2">
         <h1 class="text-4xl font-bold">WazoTek</h1>
         <p class="text-lg mt-2">Innovative Software Engineering Solutions</p>
+      </div>
+      <div class="absolute top-1.5 right-0 mr-8">
+        <button id="theme-toggle" class="h-16 w-16 bg-gray-700 text-white rounded-full dark:bg-gray-300 dark:text-gray-800">
+          <image src="sun.svg" alt="Toggle Theme" class="mx-auto h-12 hidden dark:block">
+          <image src="moon.svg" alt="Toggle Theme" class="mx-auto h-12 dark:hidden">
+        </button>
       </div>
     </div>
   </header>
@@ -69,4 +75,22 @@
     </div>
   </footer>
 </body>
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VN7ZK98G79"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VN7ZK98G79');
+</script>
 </html>
