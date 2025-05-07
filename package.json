@@ -1,0 +1,18 @@
+{
+  "name": "wazotek-website",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "Mathias Verdon <mathias@verdon.io>",
+  "license": "ISC",
+  "description": "WazoTek Website",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.5"
+  }
+}
