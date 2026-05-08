@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WazoTek is a Hong Kong-based company offering innovative software engineering solutions, including backend development, frontend development, cloud infrastructure, and data science services.">
+  <meta name="description" content="Fractional CTO and senior advisor for Hong Kong companies working through cloud, data, and AI decisions. Senior leadership support without a full-time executive hire.">
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <title>WazoTek - Software Engineering Services</title>
-  <link rel="stylesheet" href="styles.css"></script>
+  <title>WazoTek - Fractional CTO & Senior Advisor</title>
+  <link rel="stylesheet" href="styles.css">
   <style>#email > span:nth-child(2) { display: none; }</style>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "ProfessionalService",
       "url": "https://wazo-tek.com",
       "logo": "https://wazo-tek.com/logo.svg",
       "name": "WazoTek Limited",
-      "description": "WazoTek is a Hong Kong-based company offering innovative software engineering solutions, including backend development, frontend development, cloud infrastructure, and data science services.",
+      "description": "Fractional CTO and senior advisor for Hong Kong companies working through cloud, data, and AI decisions.",
       "email": "info@wazo-tek.com",
       "address": {
         "@type": "PostalAddress",
@@ -27,117 +27,291 @@
         "addressRegion": "Kowloon",
         "addressCountry": "HK"
       },
+      "areaServed": "Hong Kong",
+      "serviceType": ["Fractional CTO", "Cloud Strategy", "Data Platform Advisory", "AI Roadmap"],
       "iso6523Code": "0060:664121807"
     }
   </script>
 </head>
-<body class="bg-gray-800 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
-  <header class="text-gray-50 py-8 dark:text-gray-200">
-    <div class="relative">
-      <div class="absolute hidden md:block top-1.5 left-0 ml-8">
-        <img src="logo.svg" alt="WazoTek Logo" class="h-16">
-      </div>
-      <div class="text-center">
-        <img src="logo.svg" alt="WazoTek Logo" class="md:hidden h-16 mx-auto mb-2">
-        <h1 class="text-4xl font-bold">WazoTek</h1>
-        <p class="text-lg mt-2">Innovative Software Engineering Solutions</p>
-      </div>
-      <div class="absolute top-3 md:top-1.5 right-0 mr-8">
-        <button id="theme-toggle" class="h-10 w-10 md:h-16 md:w-16 bg-gray-700 text-white rounded-full dark:bg-gray-300 dark:text-gray-800 hover:bg-gray-600 hover:dark:bg-gray-400 active:scale-95 transition-transform">
-          <image src="sun.svg" alt="Toggle Theme" class="mx-auto h-7 md:h-10 hidden dark:block">
-          <image src="moon.svg" alt="Toggle Theme" class="mx-auto h-7 md:h-10 dark:hidden">
-        </button>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img src="logo.svg" alt="WazoTek Logo" class="h-10 md:h-12">
+          <span class="text-xl md:text-2xl font-bold">WazoTek</span>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="#services" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Services</a>
+            <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
+            <a href="#faq" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">FAQ</a>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition-colors">Get in Touch</a>
+          </nav>
+
+          <button id="theme-toggle" class="h-10 w-10 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 active:scale-95 transition-all flex items-center justify-center" aria-label="Toggle theme">
+            <svg class="h-5 w-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <svg class="h-5 w-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
-  <main class="bg-gray-100 mx-auto p-8 w-full dark:bg-gray-800">
-    <section class="mb-8">
-      <h2 class="text-3xl font-bold text-center mb-6">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white shadow-md rounded-lg p-6 text-center dark:bg-gray-700 dark:text-gray-200">
-          <div class="mx-auto mb-4 w-1/6">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/>
-              <path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/>
-              <path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
-          <p>Robust and scalable server-side solutions tailored to your business needs.</p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6 text-center dark:bg-gray-700 dark:text-gray-200">
-          <div class="mx-auto mb-4 w-1/6">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <rect x="32" y="64" width="448" height="320" rx="32" ry="32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/>
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 448l-8-64h-80l-8 64h96z"/>
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 448H144"/>
-              <path fill="currentColor" stroke="currentColor" d="M32 304v48a32.09 32.09 0 0032 32h384a32.09 32.09 0 0032-32v-48zm224 64a16 16 0 1116-16 16 16 0 01-16 16z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
-          <p>Modern, responsive, and user-friendly interfaces for web and mobile applications.</p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6 text-center dark:bg-gray-700 dark:text-gray-200">
-          <div class="mx-auto mb-4 w-1/6">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path d="M400 240c-8.89-89.54-71-144-144-144-69 0-113.44 48.2-128 96-60 6-112 43.59-112 112 0 66 54 112 120 112h260c55 0 100-27.44 100-88 0-59.82-53-85.76-96-88z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-4">Cloud Infrastructure</h3>
-          <p>Reliable and secure cloud solutions to ensure seamless scalability and performance.</p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-6 text-center dark:bg-gray-700 dark:text-gray-200">
-          <div class="mx-auto mb-4 w-1/6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M344 280l88-88M232 216l64 64M80 320l104-104"/>
-              <circle cx="456" cy="168" r="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
-              <circle cx="320" cy="304" r="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
-              <circle cx="208" cy="192" r="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
-              <circle cx="56" cy="344" r="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-4">Data Science</h3>
-          <p>Data-driven insights and machine learning models to empower your business decisions.</p>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="py-16 md:py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-sm md:text-base font-semibold text-blue-600 dark:text-blue-400 mb-4 tracking-wide uppercase">Hong Kong Fractional CTO & Senior Advisor</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Senior cloud, data, and AI leadership for Hong Kong companies</h1>
+        <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">Helping leadership teams make better decisions on cloud architecture, data platforms, AI adoption, and vendor selection without a full-time senior executive.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-center">Book a Diagnostic Call</a>
+          <a href="#services" class="inline-block border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 font-semibold px-8 py-4 rounded-lg transition-colors text-center">See How Engagements Work</a>
         </div>
       </div>
     </section>
-    <section class="text-center">
-      <h2 class="text-3xl font-bold mb-6">Why Choose Us?</h2>
-      <p class="text-lg max-w-2xl mx-auto dark:text-gray-300">
-      At WazoTek, we combine technical expertise with innovative thinking to deliver exceptional software solutions.
-      We are dedicated to helping you achieve your goals with cutting-edge technology and personalized service.
-      Based in Hong Kong, we bring a global perspective and local expertise to every project we undertake.
-      </p>
+
+    <!-- Proof Bar -->
+    <section id="proof" class="py-12 px-6 bg-gray-100 dark:bg-gray-800 border-y border-gray-200 dark:border-gray-700">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 text-center">
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">18</div>
+            <div class="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1">Years Engineering Leadership</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">100k+</div>
+            <div class="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1">User Platform Experience</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">80%</div>
+            <div class="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1">Cloud Cost Reduction</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">22</div>
+            <div class="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1">Clients Across 10 Countries</div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="text-center mt-8">
-      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <p class="text-lg max-w-2xl mx-auto mb-2 dark:text-gray-300">
-      Have questions or want to discuss your project? Reach out to us today at <span id="email" class="font-bold">info@<span>wazo</span>-tek.<span>example.</span>com</span>!
-      </p>
+
+    <!-- Problems Section -->
+    <section id="problems" class="py-16 md:py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">When to Bring in Fractional Leadership</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="p-6 md:p-8 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="text-xl font-bold mb-3">Cloud spend is rising, but architecture confidence is low</h3>
+            <p class="text-gray-700 dark:text-gray-300">Costs are increasing, but the team lacks confidence to assess whether the current architecture is appropriate for the next stage of growth.</p>
+          </div>
+          <div class="p-6 md:p-8 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="text-xl font-bold mb-3">Data is fragmented and decisions are delayed</h3>
+            <p class="text-gray-700 dark:text-gray-300">Business data is scattered across systems, reporting is slow, and there's no clear path to consolidation or meaningful improvement.</p>
+          </div>
+          <div class="p-6 md:p-8 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="text-xl font-bold mb-3">AI is on the agenda, but roadmap and business case are unclear</h3>
+            <p class="text-gray-700 dark:text-gray-300">Leadership wants to explore AI, but lacks the internal expertise to separate realistic value from vendor hype or develop a credible plan.</p>
+          </div>
+          <div class="p-6 md:p-8 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="text-xl font-bold mb-3">Major vendor decisions move forward without enough internal technical challenge</h3>
+            <p class="text-gray-700 dark:text-gray-300">Platform evaluations and major vendor decisions move forward without anyone internally positioned to challenge recommendations or validate technical claims.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">How Engagements Work</h2>
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">Structured advisory and leadership support for companies that need senior technical judgment without a full-time hire.</p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white dark:bg-gray-900 p-8 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors">
+            <div class="text-blue-600 dark:text-blue-400 font-bold text-sm uppercase tracking-wide mb-3">Best First Step</div>
+            <h3 class="text-2xl font-bold mb-4">Diagnostic Sprint</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">A fixed-scope engagement for architecture review, cloud cost assessment, AI opportunity framing, data platform evaluation, or vendor assessment. Delivered as a written report with actionable recommendations.</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">For companies that need clarity and direction before committing to broader advisory work.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-900 p-8 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors">
+            <div class="text-blue-600 dark:text-blue-400 font-bold text-sm uppercase tracking-wide mb-3">Ongoing Support</div>
+            <h3 class="text-2xl font-bold mb-4">Monthly Advisory</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">Regular strategic input on cloud, data, AI, and architecture decisions. Structured as a monthly retainer with scheduled sessions and ad-hoc access for urgent questions.</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">For companies that need consistent senior technical judgment without a full-time commitment.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-900 p-8 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors">
+            <div class="text-blue-600 dark:text-blue-400 font-bold text-sm uppercase tracking-wide mb-3">Deep Involvement</div>
+            <h3 class="text-2xl font-bold mb-4">Fractional Leadership</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">Senior involvement in roadmap planning, architecture decisions, team guidance, delivery oversight, and executive decision support during periods of transition or scale.</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">For companies that need senior technical leadership during critical phases but don't require a full-time CTO.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes Section -->
+    <section id="outcomes" class="py-16 md:py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Track Record</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="p-6 md:p-8 border-l-4 border-blue-600">
+            <h3 class="font-bold text-xl mb-2">Cloud Infrastructure Optimization</h3>
+            <p class="text-gray-700 dark:text-gray-300">Reduced cloud operating costs by 80% while maintaining uptime and performance for a production platform used at scale.</p>
+          </div>
+          <div class="p-6 md:p-8 border-l-4 border-blue-600">
+            <h3 class="font-bold text-xl mb-2">Platform Architecture & Scale</h3>
+            <p class="text-gray-700 dark:text-gray-300">Architected and delivered a platform supporting 100,000+ active users across complex data and analytics workflows.</p>
+          </div>
+          <div class="p-6 md:p-8 border-l-4 border-blue-600">
+            <h3 class="font-bold text-xl mb-2">Engineering Velocity Improvement</h3>
+            <p class="text-gray-700 dark:text-gray-300">Improved engineering velocity and deployment frequency by 70% through CI/CD modernization, team process refinement, and technical leadership.</p>
+          </div>
+          <div class="p-6 md:p-8 border-l-4 border-blue-600">
+            <h3 class="font-bold text-xl mb-2">IoT & Cloud Integration</h3>
+            <p class="text-gray-700 dark:text-gray-300">Built and supported complex IoT systems integrated with cloud infrastructure, handling real-time data streams and coordinating physical and digital systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">About</h2>
+        <div class="bg-white dark:bg-gray-900 p-8 md:p-12 rounded-xl border border-gray-200 dark:border-gray-700">
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            WazoTek provides fractional CTO and senior advisory services to a limited number of Hong Kong companies that need senior technical judgment without a full-time executive hire.
+          </p>
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            With 18 years of engineering leadership across cloud, data, AI, and platform engineering, we combine consulting experience with in-house executive expertise. Our track record includes leading engineering teams, building platforms serving 100,000+ users, reducing cloud costs by 80%, and working with clients across 10 countries.
+          </p>
+          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            We focus on important technology decisions where senior judgment matters: cloud architecture, data platform strategy, AI roadmap planning, vendor evaluation, and technical direction. WazoTek provides advisory, decision support, and technical oversight rather than hands-on delivery. When implementation is required, we help structure the work, select the right partners, and provide oversight during execution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">What does a fractional CTO or senior advisor actually do?</h3>
+            <p class="text-gray-700 dark:text-gray-300">We provide senior technical judgment and leadership support for cloud, data, and AI decisions without the cost and overhead of a full-time hire. This includes architecture reviews, vendor evaluation, roadmap planning, team guidance, and decision support for important technology choices.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">How is this different from hiring a full-time CTO?</h3>
+            <p class="text-gray-700 dark:text-gray-300">A fractional engagement provides access to senior-level experience without the cost and commitment of a full-time hire. This works well for companies that need strategic technical leadership but don't require someone in the role full-time, or for companies facing major technology decisions that benefit from outside expertise.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">How is this different from a software agency or contractor?</h3>
+            <p class="text-gray-700 dark:text-gray-300">WazoTek focuses on advisory, decision support, and technical oversight rather than hands-on delivery or staff augmentation. We help you make better decisions, evaluate options, challenge vendor proposals, and set technical direction. When implementation is required, we help structure the work, select partners, and provide oversight, but execution itself is handled by your team or selected partners.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">What kinds of Hong Kong companies are the best fit?</h3>
+            <p class="text-gray-700 dark:text-gray-300">Companies that need senior technical judgment for cloud, data, or AI decisions but don't have that expertise in-house. Typically SMEs, growth-stage companies, or established businesses planning technology modernization. Best fit is leadership teams facing major technology decisions where getting it right matters.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">How do engagements usually begin?</h3>
+            <p class="text-gray-700 dark:text-gray-300">Most engagements start with a diagnostic sprint: a fixed-scope assessment focused on a specific challenge such as cloud cost optimization, architecture review, or AI roadmap framing. This provides immediate value and clarity before committing to ongoing work. Many companies then move to a monthly advisory retainer or fractional leadership arrangement.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">Are implementation services included?</h3>
+            <p class="text-gray-700 dark:text-gray-300">WazoTek focuses on advisory, decision support, and technical oversight rather than hands-on execution. When implementation is required, we help define requirements, evaluate vendors or contractors, and provide oversight during delivery. Implementation itself is handled by your internal team or selected partners.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">How is pricing determined?</h3>
+            <p class="text-gray-700 dark:text-gray-300">Pricing is discussed after an initial conversation to ensure fit and scope clarity. Diagnostic sprints and advisory retainers are structured as fixed monthly fees. Fractional leadership engagements are scoped based on required involvement and engagement duration.</p>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+            <h3 class="font-bold text-xl mb-3">Where are you based and who do you work with?</h3>
+            <p class="text-gray-700 dark:text-gray-300">WazoTek is based in Hong Kong and prioritizes work with Hong Kong companies and leadership teams. This allows us to provide responsive in-person support when needed and stay close to the local business context and work in the same time zone as client teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Get in Touch</h2>
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
+          We work with a limited number of retained clients. New engagements begin with a brief conversation to discuss your challenge and determine the right approach.
+        </p>
+        <div class="bg-white dark:bg-gray-900 p-8 md:p-12 rounded-xl border border-gray-200 dark:border-gray-700">
+          <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">
+            Email us directly to start a conversation:
+          </p>
+          <a href="mailto:info@wazo-tek.com" class="inline-block text-2xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
+            <span id="email">info@<span>wazo</span>-tek.<span>example.</span>com</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="text-white py-6 dark:text-gray-400">
-    <div class="mx-auto text-center">
-      <p>&copy; 2026 WazoTek Limited. All rights reserved.</p>
+
+  <footer class="py-8 px-6 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
+      <p>&copy; <span id="current-year"></span> WazoTek Limited. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VN7ZK98G79"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VN7ZK98G79');
+  </script>
 </body>
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
-  themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-  });
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VN7ZK98G79"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VN7ZK98G79');
-</script>
 </html>

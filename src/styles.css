@@ -1,3 +1,29 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgb(37, 99, 235);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Mobile menu improvements if needed later */
+@media (max-width: 768px) {
+  nav a:not(.bg-blue-600) {
+    display: none;
+  }
+}
