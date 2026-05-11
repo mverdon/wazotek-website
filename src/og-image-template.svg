@@ -42,6 +42,14 @@
     <text x="0" y="95" font-family="Arial, sans-serif" font-size="32" fill="#0f1419" text-anchor="middle">
       Cloud • Data • AI Leadership
     </text>
+
+    <!-- Call-to-action button -->
+    <g transform="translate(0, 160)">
+      <rect x="-180" y="-35" width="360" height="70" rx="35" fill="#24a9eb"/>
+      <text x="0" y="8" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">
+        Book a Diagnostic Call
+      </text>
+    </g>
   </g>
 
   <!-- Website URL (bottom-right) -->
