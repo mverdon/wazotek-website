@@ -1,0 +1,51 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean white background like the website -->
+  <rect width="1200" height="675" fill="#ffffff"/>
+
+  <defs>
+    <!-- Subtle decorative pattern -->
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#e5e7eb" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#dots)"/>
+
+  <!-- WazoTek Logo (top-left) -->
+  <g transform="translate(50, 50) scale(0.08)">
+    <rect x="146" y="94" width="512" height="96" style="fill:#24a9eb"/>
+    <rect x="354" y="254" width="96" height="384" style="fill:#24a9eb"/>
+    <rect x="-69" y="190" width="96" height="512" style="fill:#ccc" transform="skewX(20)"/>
+    <rect x="777" y="190" width="96" height="512" style="fill:#ccc" transform="skewX(-20)"/>
+  </g>
+
+  <!-- Main content (slightly adjusted for taller aspect ratio) -->
+  <g transform="translate(600, 340)">
+    <!-- Company name -->
+    <text x="0" y="-120" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#1f2937" text-anchor="middle">
+      WazoTek
+    </text>
+
+    <!-- Main tagline -->
+    <text x="0" y="-40" font-family="Arial, sans-serif" font-size="42" font-weight="600" fill="#1f2937" text-anchor="middle">
+      Fractional CTO &amp; Senior Advisor
+    </text>
+
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="42" font-weight="600" fill="#1f2937" text-anchor="middle">
+      for Hong Kong Companies
+    </text>
+
+    <!-- Divider line -->
+    <line x1="-200" y1="40" x2="200" y2="40" stroke="#24a9eb" stroke-width="3" opacity="0.5"/>
+
+    <!-- Subtagline -->
+    <text x="0" y="95" font-family="Arial, sans-serif" font-size="32" fill="#0f1419" text-anchor="middle">
+      Cloud • Data • AI Leadership
+    </text>
+  </g>
+
+  <!-- Website URL (bottom-right) -->
+  <text x="1120" y="625" font-family="Arial, sans-serif" font-size="28" fill="#0f1419" text-anchor="end">
+    wazo-tek.com
+  </text>
+</svg>
