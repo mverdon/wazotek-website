@@ -137,6 +137,19 @@ User-agent: YioopBot
 User-agent: yoozBot
 # youdao.com chinese search engine
 User-agent: YoudaoBot
+# AI & LLM crawlers for answer engines (AEO)
+# OpenAI GPT crawler
+User-agent: GPTBot
+User-agent: ChatGPT-User
+# Anthropic Claude crawler
+User-agent: anthropic-ai
+User-agent: Claude-Web
+# Google Gemini/Bard crawler
+User-agent: Google-Extended
+# Perplexity AI search engine
+User-agent: PerplexityBot
+# Common Crawl (used by many AI systems)
+User-agent: CCBot
 # crawling rule(s) for above bots
 Disallow:
 # disallow all other bots
