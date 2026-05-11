@@ -4,6 +4,9 @@
 # This document is licensed with a CC BY-NC-SA 4.0 license.            #
 # Last update: 2025-03-04                                              #
 ########################################################################
+
+# Sitemap location
+Sitemap: https://wazo-tek.com/sitemap.xml
 # so.com chinese search engine
 User-agent: 360Spider
 User-agent: 360Spider-Image
