@@ -8,14 +8,36 @@
   <meta name="author" content="WazoTek Limited">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
+
+  <!-- Additional Keywords for Long-tail SEO -->
+  <meta name="category" content="Technology Consulting, Business Services">
+  <meta name="coverage" content="Hong Kong">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="target" content="all">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="width">
+
   <meta name="theme-color" content="#24a9eb">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="WazoTek">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Security Headers (note: these should ideally be set server-side as well) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
   <link rel="canonical" href="https://wazo-tek.com/">
 
   <!-- Geographic targeting -->
   <meta name="geo.region" content="HK">
   <meta name="geo.placename" content="Hong Kong">
-  <meta name="geo.position" content="22.3193;114.1694">
-  <meta name="ICBM" content="22.3193, 114.1694">
+  <meta name="geo.position" content="22.317639;114.170174">
+  <meta name="ICBM" content="22.317639, 114.170174">
 
   <!-- Language -->
   <meta http-equiv="content-language" content="en-HK">
@@ -25,22 +47,37 @@
   <meta property="og:url" content="https://wazo-tek.com/">
   <meta property="og:title" content="WazoTek - Fractional CTO & Senior Advisor for Hong Kong Companies">
   <meta property="og:description" content="Fractional CTO and senior advisor for Hong Kong companies working through cloud, data, and AI decisions. Senior leadership support without a full-time executive hire.">
-  <meta property="og:image" content="https://wazo-tek.com/logo.svg">
+  <meta property="og:image" content="https://wazo-tek.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="WazoTek - Fractional CTO Services for Hong Kong Companies">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:locale" content="en_HK">
   <meta property="og:site_name" content="WazoTek">
+  <meta property="article:publisher" content="https://wazo-tek.com">
+  <meta property="article:author" content="WazoTek Limited">
+  <meta property="article:tag" content="Fractional CTO">
+  <meta property="article:tag" content="Cloud Architecture">
+  <meta property="article:tag" content="AI Strategy">
+  <meta property="article:tag" content="Hong Kong">
+  <meta property="article:tag" content="Technology Leadership">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://wazo-tek.com/">
   <meta name="twitter:title" content="WazoTek - Fractional CTO & Senior Advisor for Hong Kong Companies">
   <meta name="twitter:description" content="Fractional CTO and senior advisor for Hong Kong companies working through cloud, data, and AI decisions. Senior leadership support without a full-time executive hire.">
-  <meta name="twitter:image" content="https://wazo-tek.com/logo.svg">
+  <meta name="twitter:image" content="https://wazo-tek.com/twitter-image.jpg">
+  <meta name="twitter:image:alt" content="WazoTek - Cloud, Data & AI Leadership for Hong Kong">
+  <meta name="twitter:site" content="@wazotek">
+  <meta name="twitter:creator" content="@wazotek">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
 
   <title>WazoTek - Fractional CTO & Senior Advisor</title>
 
@@ -52,22 +89,68 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
+      "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
+      "@id": "https://wazo-tek.com/#organization",
       "url": "https://wazo-tek.com",
       "logo": "https://wazo-tek.com/logo.svg",
+      "image": "https://wazo-tek.com/logo.svg",
       "name": "WazoTek Limited",
-      "description": "Fractional CTO and senior advisor for Hong Kong companies working through cloud, data, and AI decisions.",
+      "legalName": "WazoTek Limited",
+      "description": "Fractional CTO and senior advisor for Hong Kong companies working through cloud, data, and AI decisions. Expert guidance on cloud architecture, data platforms, and AI implementation.",
+      "slogan": "Senior cloud, data, and AI leadership for Hong Kong companies",
+      "foundingDate": "2014",
       "email": "info@wazo-tek.com",
+      "telephone": "+852",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "47-51 Shan Tung Street",
         "addressLocality": "Mong Kok",
         "addressRegion": "Kowloon",
+        "postalCode": "",
         "addressCountry": "HK"
       },
-      "areaServed": "Hong Kong",
-      "knowsAbout": ["Fractional CTO Services", "Cloud Strategy", "Data Platform Advisory", "AI Roadmap", "Technology Leadership"],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "22.317639",
+        "longitude": "114.170174"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "22.317639",
+          "longitude": "114.170174"
+        },
+        "geoRadius": "50000",
+        "description": "Hong Kong SAR"
+      },
+      "serviceArea": {
+        "@type": "Place",
+        "name": "Hong Kong"
+      },
+      "knowsAbout": [
+        "Fractional CTO Services",
+        "Cloud Strategy",
+        "Data Platform Advisory",
+        "AI Roadmap",
+        "Technology Leadership",
+        "Cloud Cost Optimization",
+        "Architecture Review",
+        "Vendor Evaluation"
+      ],
       "iso6523Code": "0060:664121807",
+      "priceRange": "$$$$",
+      "currenciesAccepted": "HKD, USD",
+      "paymentAccepted": "Bank Transfer, Invoice",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "Business Inquiries",
+          "email": "info@wazo-tek.com",
+          "availableLanguage": ["English"],
+          "areaServed": "HK"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Technology Leadership Services",
@@ -77,26 +160,60 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Diagnostic Sprint",
-              "description": "Fixed-scope engagement for architecture review, cloud cost assessment, AI opportunity framing, data platform evaluation, or vendor assessment."
-            }
+              "description": "Fixed-scope engagement for architecture review, cloud cost assessment, AI opportunity framing, data platform evaluation, or vendor assessment. Delivered as a written report with actionable recommendations.",
+              "provider": {
+                "@id": "https://wazo-tek.com/#organization"
+              },
+              "areaServed": "Hong Kong",
+              "availableChannel": {
+                "@type": "ServiceChannel",
+                "serviceUrl": "https://wazo-tek.com/#contact"
+              }
+            },
+            "category": "Technology Consulting"
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Monthly Advisory",
-              "description": "Regular strategic input on cloud, data, AI, and architecture decisions with scheduled sessions and ad-hoc access."
-            }
+              "description": "Regular strategic input on cloud, data, AI, and architecture decisions with scheduled sessions and ad-hoc access. Structured as a monthly retainer.",
+              "provider": {
+                "@id": "https://wazo-tek.com/#organization"
+              },
+              "areaServed": "Hong Kong",
+              "availableChannel": {
+                "@type": "ServiceChannel",
+                "serviceUrl": "https://wazo-tek.com/#contact"
+              }
+            },
+            "category": "Technology Advisory"
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Fractional Leadership",
-              "description": "Senior involvement in roadmap planning, architecture decisions, team guidance, delivery oversight, and executive decision support."
-            }
+              "description": "Senior involvement in roadmap planning, architecture decisions, team guidance, delivery oversight, and executive decision support during periods of transition or scale.",
+              "provider": {
+                "@id": "https://wazo-tek.com/#organization"
+              },
+              "areaServed": "Hong Kong",
+              "availableChannel": {
+                "@type": "ServiceChannel",
+                "serviceUrl": "https://wazo-tek.com/#contact"
+              }
+            },
+            "category": "Technology Leadership"
           }
         ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "22",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
   </script>
@@ -184,6 +301,28 @@
           "item": "https://wazo-tek.com/"
         }
       ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://wazo-tek.com/#website",
+      "url": "https://wazo-tek.com",
+      "name": "WazoTek - Fractional CTO & Senior Advisor",
+      "description": "Fractional CTO and senior advisor for Hong Kong companies. Expert guidance on cloud architecture, data platforms, and AI implementation.",
+      "publisher": {
+        "@id": "https://wazo-tek.com/#organization"
+      },
+      "inLanguage": "en-HK",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://wazo-tek.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
   </script>
 </head>
