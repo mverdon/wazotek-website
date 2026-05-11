@@ -2,6 +2,27 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Brand colors - aligned with logo */
+@theme {
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #24a9eb;
+  --color-blue-600: #24a9eb;  /* Logo cyan - use with dark text for accessibility */
+  --color-blue-700: #1c87bb;
+  --color-blue-800: #156a94;
+  --color-gray-900: #1f2937;  /* Dark text for cyan backgrounds */
+  --color-gray-950: #0f1419;  /* Darker for hover states */
+}
+
+/* Accessible button styles - cyan bg with dark text */
+.bg-blue-600 {
+  color: var(--color-gray-900);
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: var(--color-blue-700);
+  color: var(--color-gray-950);
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -16,7 +37,7 @@ body {
 /* Focus styles for accessibility */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid rgb(37, 99, 235);
+  outline: 2px solid #24a9eb;
   outline-offset: 2px;
   border-radius: 4px;
 }
