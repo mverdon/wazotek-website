@@ -568,6 +568,19 @@
         if (target) window.scrollTo({top: target.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth'});
       });
     });
+
+    if (typeof gtag !== 'undefined') {
+      document.querySelectorAll('a[href^="mailto:"]').forEach(l =>
+        l.addEventListener('click', () => gtag('event', 'email_click'))
+      );
+      document.querySelectorAll('a[href="#contact"]').forEach(b =>
+        b.addEventListener('click', () => gtag('event', 'cta_click', {location: b.closest('section')?.id}))
+      );
+      const c = document.getElementById('contact');
+      if (c) new IntersectionObserver(e => e.forEach(x => {
+        if (x.isIntersecting) { gtag('event', 'contact_view'); observer.unobserve(c); }
+      }), {threshold: 0.5}).observe(c);
+    }
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VN7ZK98G79"></script>
   <script>
