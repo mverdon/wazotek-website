@@ -569,28 +569,26 @@
       });
     });
   </script>
-  <script src="https://www.googletagmanager.com/gtag/js?id=G-VN7ZK98G79"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VN7ZK98G79"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-VN7ZK98G79');
 
-    window.addEventListener('load', () => {
-      document.querySelectorAll('a[href^="mailto:"]').forEach(l =>
-        l.addEventListener('click', () => gtag('event', 'email_click'))
-      );
-      document.querySelectorAll('a[href="#contact"]').forEach(b =>
-        b.addEventListener('click', () => gtag('event', 'cta_click', {location: b.closest('section')?.id}))
-      );
-      const c = document.getElementById('contact');
-      if (c) {
-        const obs = new IntersectionObserver(e => e.forEach(x => {
-          if (x.isIntersecting) { gtag('event', 'contact_view'); obs.unobserve(c); }
-        }), {threshold: 0.5});
-        obs.observe(c);
-      }
-    });
+    document.querySelectorAll('a[href^="mailto:"]').forEach(l =>
+      l.addEventListener('click', () => gtag('event', 'email_click'))
+    );
+    document.querySelectorAll('a[href="#contact"]').forEach(b =>
+      b.addEventListener('click', () => gtag('event', 'cta_click', {location: b.closest('section')?.id}))
+    );
+    const c = document.getElementById('contact');
+    if (c) {
+      const obs = new IntersectionObserver(e => e.forEach(x => {
+        if (x.isIntersecting) { gtag('event', 'contact_view'); obs.unobserve(c); }
+      }), {threshold: 0.5});
+      obs.observe(c);
+    }
   </script>
 </body>
 </html>
