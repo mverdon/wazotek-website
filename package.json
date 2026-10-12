@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/styles.css -o public/styles.css"
+    "build": "postcss src/styles.css -o public/styles.css",
+    "serve": "npx --yes serve public -l 3000"
   },
   "keywords": [],
   "author": "Mathias Verdon <mathias@verdon.io>",

@@ -152,6 +152,6 @@ User-agent: PerplexityBot
 User-agent: CCBot
 # crawling rule(s) for above bots
 Disallow:
-# disallow all other bots
+# all other bots
 User-agent: *
-Disallow: /
+Allow: /
